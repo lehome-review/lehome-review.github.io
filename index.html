@@ -1,1 +1,267 @@
+<!DOCTYPE html>
+<html>
 
+<head>
+
+  <meta charset="utf-8">
+  <meta name="description" content="GarmentLab: A Unified Simulation and Benchmark for Garment Manipulation.">
+  <meta name="keywords" content="Garment, manipulation, fabrics">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>LeHome: A Simulation Environment for
+    Deformable Object Manipulation in Household Scenarios</title>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
+  <script src="https://kit.fontawesome.com/6811428cb2.js" crossorigin="anonymous"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'G-PYVRSFMDRL');
+  </script>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
+
+  <!-- Font Awesome CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+</head>
+
+<body>
+  <nav class="navbar" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+      <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
+
+    </div>
+  </nav>
+
+
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <h1 class="title is-1 publication-title">LeHome: A Simulation Environment for Deformable Object Manipulation
+              in Household Scenarios
+            </h1>
+            <h4 class="title is-4 conference-authors"><a target="_blank" href="https://2026.ieee-icra.org/">ICRA
+                2026</a></h4>
+
+            <div class="is-size-5 publication-authors">
+              <span class="author-block">Anonymous Authors</span>
+            </div>
+
+
+            <div class="column has-text-centered">
+              <div class="publication-links">
+
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="hero teaser">
+    <div class="container is-max-desktop">
+      <div class="hero-body" style="padding-bottom: 20px;">
+        <img src="./static/images/overview.png" />
+        <br>
+        <br>
+        <p style="text-align:justify!important;">
+          <b>LeHome</b> provides a high-fidelity simulation platform by integrating various household scenarios and
+          various objects within the scenarios, especially deformable objects.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container is-max-desktop">
+      <!-- Abstract. -->
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths" style="padding-top: 20px;">
+          <h2 class="title is-3">Abstract</h2>
+          <div class="content has-text-justified">
+            <p>
+              Household environments present one of the most common, impactful yet challenging application domains for
+              robotics. Within household scenarios, manipulating deformable objects is particularly difficult, both in
+              simulation and real-world execution, due to complex dynamics, diverse material properties, and varied
+              shapes, and thus existing simulation environments often fall short in providing reliable support for
+              deformable objects.
+              We introduce LeHome, a comprehensive simulation environment designed for deformable object manipulation in
+              household scenarios. LeHome covers a wide spectrum of deformable objects, such as garments, sponges, bags,
+              and food items, offering high-fidelity dynamics and realistic interactions that existing simulators
+              struggle to capture. Moreover, LeHome supports multiple robotic embodiments and extends to low-cost
+              robots, enabling end-to-end evaluation of household tasks on resource-constrained hardware.
+              By bridging the gap between realistic deformable object simulation and practical robotic platforms, LeHome
+              provides a scalable testbed for advancing household robotics.
+            </p>
+          </div>
+        </div>
+      </div>
+      <!--/ Abstract. -->
+
+      <!-- Paper video. -->
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-3">Video</h2>
+          <div class="publication-video">
+            <iframe src="./static/videos/mainvideo.mp4" frameborder="0" allow="autoplay; encrypted-media"
+              allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+      <!--/ Paper video. -->
+    </div>
+    </div>
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">LeHome Architecture</h2>
+        <hr style="margin-top:0px">
+
+        <h3 class="title is-4" style="margin-top:20px; margin-bottom:0px; color:#0d0e0e"><b></b></h3>
+        <div class="container is-max-desktop">
+          <div class="hero-body" style="padding-top: 20px; padding-bottom: 20px;">
+            <img src="./static/images/architecture.png" />
+            <p class="is-bold"></p>
+          </div>
+          <p style="text-align:justify!important;">
+            (<b>Left</b>) LeHome Assets can deliver realistic simulations of different robots, articulation/rigid
+            objects,
+            deformable objects, and cover multiple household scenarios. (<b>Right</b>) Leveraging diverse simulation
+            methods and mechanisms, LeHome Engine enables various simulation capabilities. (<b>Bottom</b>) Subsequently,
+            LeHome
+            Benchmark utilizes these assets to construct tasks, conduct domain randomization, and facilitate
+            teleoperation data collection.
+          </p>
+        </div>
+
+      </div>
+    </div>
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">LeHome Assets</h2>
+        <hr style="margin-top:0px">
+        <h3 class="title is-4" style="margin-top:20px; margin-bottom:0px; color:#0d0e0e"><b>Household Scenarios</b></h3>
+        <div class="container is-max-desktop">
+          <div class="hero-body" style="padding-top: 20px; padding-bottom: 20px;">
+            <img src="./static/images/scene.png" />
+            <p class="is-bold"></p>
+          </div>
+          <p style="text-align:justify!important;">
+            Simulated Deformble Objects of LeHome cover 6 categories with a large number of visually and physically
+            high-fidelity assets for each category.
+          </p>
+
+        </div>
+
+        <h3 class="title is-4" style="margin-top:20px; margin-bottom:0px; color:#0d0e0e"><b>Simulated Deformble
+            Objects</b></h3>
+        <div class="container is-max-desktop">
+          <div class="hero-body" style="padding-top: 20px; padding-bottom: 20px;">
+            <img src="./static/images/objects.png" />
+            <p class="is-bold"></p>
+          </div>
+          <p style="text-align:justify!important;">
+            Simulated Deformble Objects of LeHome cover 6 categories with a large number of visually and physically
+            high-fidelity assets for each category.
+          </p>
+
+        </div>
+        <h3 class="title is-4" style="margin-top:20px; margin-bottom:0px; color:#0d0e0e"><b>Diverse Manipulation
+            Mechanisms</b></h3>
+        <div class="container is-max-desktop">
+          <div class="hero-body" style="padding-top: 20px; padding-bottom: 20px;">
+            <img src="./static/images/mechanisms.png" />
+            <p class="is-bold"></p>
+          </div>
+          <p style="text-align:justify!important;">
+            LeHome models causal relationships of manipulation through the action graph mechanism, ensuring the
+            simulation results align with real-world causal relationships and providing high-fidelity interactions.
+          </p>
+
+        </div>
+        <h3 class="title is-4" style="margin-top:20px; margin-bottom:0px; color:#0d0e0e"><b>Lerobot Family</b></h3>
+        <div class="container is-max-desktop">
+          <div class="hero-body" style="padding-top: 20px; padding-bottom: 20px;">
+            <img src="./static/images/lerobot.png" />
+            <p class="is-bold"></p>
+          </div>
+          <p style="text-align:justify!important;">
+            
+          </p>
+
+        </div>
+        <div class="container is-max-desktop">
+          <div class="hero-body" style="padding-top: 20px; padding-bottom: 20px;">
+            <img src="./static/images/teleop.png" />
+            <p class="is-bold"></p>
+          </div>
+          <p style="text-align:justify!important;">
+            
+          </p>
+
+        </div>
+      </div>
+    </div>
+    </div>
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">LeHome Benchmark</h2>
+        <hr style="margin-top:0px">
+
+        <h3 class="title is-4" style="margin-top:20px; margin-bottom:0px; color:#0d0e0e"><b></b></h3>
+        <div class="container is-max-desktop">
+          <div class="hero-body" style="padding-top: 20px; padding-bottom: 20px;">
+            <img src="./static/images/realbench.png" />
+            <p class="is-bold"></p>
+          </div>
+          <p style="text-align:justify!important;">
+
+          </p>
+        </div>
+
+      </div>
+    </div>
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Sim2Real Method</h2>
+        <hr style="margin-top:0px">
+
+        <h3 class="title is-4" style="margin-top:20px; margin-bottom:0px; color:#0d0e0e"><b></b></h3>
+        <div class="container is-max-desktop">
+          <div class="hero-body" style="padding-top: 20px; padding-bottom: 20px;">
+            <img src="./static/images/sim2real.png" />
+            <p class="is-bold"></p>
+          </div>
+          <p style="text-align:justify!important;">
+
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+</body>
+
+</html>
